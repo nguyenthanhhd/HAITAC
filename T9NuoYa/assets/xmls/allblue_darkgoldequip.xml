@@ -1,0 +1,5 @@
+<root>
+  <allblue_darkgoldequip id="1" name="Bộ trang bị Diệt Nhật" tips="Viên đá bí mật viễn cổ sâu trong lòng đất, là chìa khóa để mở Ngày Diệt Nhật, hay là tấm khiên để ngăn cản Diệt Nhật." level="125" maxNum="7" equipmentId="11608,12608,13608,14608,15608,16608,17608" property2="9|700" property3="40|100,54|325" property4="36|140,56|350" property5="38|180,56|550" property6="2|800,55|600,41|1800"/>
+  <allblue_darkgoldequip id="2" name="Bộ trang bị Tinh Nguyên" tips="Hạt nhân khởi đầu và kết thúc của tinh cầu, dưới lực hút của vạn vật hấp dẫn, tụ hợp thành Supernova." level="130" maxNum="7" equipmentId="11609,12609,13609,14609,15609,16609,17609" property2="9|1000" property3="40|140,54|475" property4="36|180,56|500" property5="38|220,56|700" property6="2|1000,55|800,41|2600"/>
+  <allblue_darkgoldequip id="3" name="Bộ trang bị Sáng Thế" tips="Sáng thế thần thức, bắt nguồn từ trong vô tận hỗn độn." level="135" maxNum="7" equipmentId="117010,127010,137010,147010,157010,167010,177010" property2="9|1600" property3="40|220,54|775" property4="36|260,56|800" property5="38|300,56|1000" property6="2|1400,55|1200,41|4200"/>
+</root>

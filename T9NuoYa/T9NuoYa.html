@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+    <!-- 
+    Smart developers always View Source. 
+    
+    This application was built using Adobe Flex, an open source framework
+    for building rich Internet applications that get delivered via the
+    Flash Player or to desktops via Adobe AIR. 
+    
+    Learn more about Flex at http://flex.org 
+    // -->
+    <head>
+        <title></title>
+        <meta name="google" value="notranslate" />         
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="./js/jquery.js"></script>
+        <!-- Include CSS to eliminate any default margins/padding and set the height of the html element and 
+             the body element to 100%, because Firefox, or any Gecko based browser, interprets percentage as 
+             the percentage of the height of its parent container, which has to be set explicitly.  Fix for
+             Firefox 3.6 focus border issues.  Initially, don't display flashContent div so it won't show 
+             if JavaScript disabled.
+        -->
+        <style type="text/css" media="screen"> 
+            html, body  { height:100%; }
+            body { margin:0; padding:0; overflow:auto; text-align:center; 
+                   background-color: #000000; }   
+            object:focus { outline:none; }
+            #flashContent { display:none; }
+        </style>
+        
+        <!-- Enable Browser History by replacing useBrowserHistory tokens with two hyphens -->
+        <!-- BEGIN Browser History required section >
+        <link rel="stylesheet" type="text/css" href="history/history.css" />
+        <script type="text/javascript" src="history/history.js"></script>
+        <! END Browser History required section -->  
+            
+		<script type="text/javascript">
+			function NoFlashMouseOver()
+			{
+				$("#imgbtn").attr('src', "./images/btnvi_over.png");
+			}
+
+			function NoFlashMouseOut()
+			{
+				$("#imgbtn").attr('src', "./images/btnvi_out.png");
+			}
+
+			function NoFlashClick()
+			{
+				$(".arrow-block").show();
+			}
+		</script>
+        <script type="text/javascript" src="http://192.168.127.142:80/T9NuoYa/swfobject.js"></script>
+        <script type="text/javascript">
+            // For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. 
+            var swfVersionStr = "10.2.0";
+            // To use express install, set to playerProductInstall.swf, otherwise the empty string. 
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {};
+                flashvars.host = "192.168.127.142";
+                flashvars.assetPath = "http://192.168.127.142:80/T9NuoYa/assets/";
+                flashvars.port = 8002;
+                flashvars.AMF = 3;
+                flashvars.serverID = "game20002";
+                flashvars.openDateTime= "2015-10-18-00-00-00";
+                flashvars.mergeServerTime = "2015-10-18-15-00-00";
+                flashvars.swfURL = "http://192.168.127.142:80/T9NuoYa/Main.swf";
+                flashvars.configURL = "http://192.168.127.142:80/T9NuoYa/loadingTips.xml";
+                var url = window.location.href;
+                var url = url.split("sid=");
+                flashvars.pid = url[1];
+                if(flashvars.pid == undefined)
+                {
+                        alert("?有sid");
+                       
+                }
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#000000";
+            params.allowscriptaccess = "always";
+            params.allowfullscreen = "true";
+            var attributes = {};
+            attributes.id = "loading";
+            attributes.name = "loading";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "http://192.168.127.142:80/T9NuoYa/loading.swf", "flashContent", 
+                "1260", "660", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+            // JavaScript enabled so display the flashContent div in case it is not replaced with a swf object.
+            swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script>
+    </head>
+    
+    <body style="overflow-x: hidden;overflow-y: hidden">
+        <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
+             JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
+             when JavaScript is disabled.
+        -->
+<script type="text/javascript">
+var resizeTimer = null;  
+    var screenWidth = null;
+    var screenHeight = null;
+    function doResize()
+    {
+        var screenWidth = document.body.offsetWidth;
+        var screenHeight = document.body.offsetHeight;
+        if(screenWidth>1260){
+            screenWidth = 1260;
+        }
+        document.getElementById('loading').width = screenWidth;
+        if(screenHeight>660){
+            screenHeight = 660;
+        }
+        document.getElementById('loading').height = screenHeight;
+        resizeTimer=null ;
+    }   
+    window.onresize = function()
+    {   
+        if(resizeTimer==null)
+        {
+            resizeTimer =
+            setTimeout("doResize()",30);   
+        }   
+    }
+</script>
+		<div id="flashContent" style="visibility: visible;">
+			<div style="height:1080px;z-index:0;background: url(./images/playbgvi.png) no-repeat center top;text-align:center;"> 
+				<a target="_blank" href="https://get.adobe.com/en/flashplayer/" onmouseover="NoFlashMouseOver()" onmouseout="NoFlashMouseOut()" onclick="NoFlashClick()"> 
+					<img id="imgbtn" src="./images/btnvi_out.png" style="width:570px;height:106px;border:none;margin:465px auto;">
+				</a>
+				<div class="arrow-block" style="display: none; height: 320px;width: 377px;position: relative;left: 290px;top: -830px;background-image: url(./images/popnotify_vi.png);background-repeat: no-repeat;"></div>
+			</div>                
+		</div>
+        
+        <noscript>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1260" height="660" id="loading">
+                <param name="movie" value="loading.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#000000" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="true" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="loading.swf" width="1260" height="660">
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#000000" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowFullScreen" value="true" />
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+					<div style="height:1080px;z-index:0;background: url(./images/playbgvi.jpg) no-repeat center top;text-align:center;"> 
+						<a target="_blank" href="https://get.adobe.com/en/flashplayer/" onmouseover="NoFlashMouseOver()" onmouseout="NoFlashMouseOut()"> 
+							<img id="imgbtn" src="./images/btnvi_out.png" style="width:570px;height:106px;border:none;margin:465px auto;">
+						</a>                            
+					</div> 
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </noscript>     
+   </body>
+</html>
